@@ -1,0 +1,267 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* PARTICLE BACKGROUND */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0a0a0a;
+}
+
+/* BODY */
+body {
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* SECTION COMMON */
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #dcdcdc;
+}
+
+/* SKILLS */
+.skills {
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.skill-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* FIX: better mobile grid */
+.skill-box div {
+    background: linear-gradient(145deg, #1e1e1e, #292929);
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.skill-box div:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+}
+
+/* PROJECTS */
+.projects {
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.project-card {
+    background: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px #00dbde;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+/* IMPORTANT: responsive video */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CERTIFICATES */
+.certificates {
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.certificate-card {
+    background: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #00dbde;
+}
+
+.certificate-card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 80px 10%;
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 18px;
+    word-break: break-word; /* FIX for long links */
+}
+
+/* ========================= */
+/* 🔥 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero h2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .skill-box {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .certificate-card {
+        padding: 15px;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}

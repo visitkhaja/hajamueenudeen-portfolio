@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Haja-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- PARTICLE BACKGROUND -->
+    <div id="particles-js"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hello, I'm <span class="highlight">HAJA MUEENUDEEN M.S</span></h1>
+        <h2>Frontend Intern | Aspiring DevOps Engineer</h2>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I completed a Frontend Internship where I worked with HTML, CSS and basic JavaScript.
+            Now I am moving towards DevOps and learning Linux, AWS EC2, S3 Versioning,
+            and Kubernetes (Pods & ReplicaSets).
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <div>Linux (Basic)</div>
+            <div>AWS EC2</div>
+            <div>S3 Bucket Versioning</div>
+            <div>Kubernetes Pods</div>
+            <div>Kubernetes ReplicaSets</div>
+            <div>HTML</div>
+            <div>CSS</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <h3>AWS EC2 Deployment</h3>
+            <p>Launched EC2 instance and deployed static website.</p>
+            <video width="100%" height="250" controls>
+                <source src="./assets/AWS EC2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="project-card">
+            <h3>AWS S3 Bucket Versioning</h3>
+            <p>Created and enabled versioning on an AWS S3 bucket for data protection.</p>
+            <video width="100%" height="250" controls>
+                <source src="./assets/AWS S3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="certificates">
+        <h2>My Certificates</h2>
+
+        <div class="certificate-card">
+            <h3>Python Completion</h3>
+            <img src="./assets/python.png" alt="Python Certificate">
+        </div>
+
+        <div class="certificate-card">
+            <h3>Frontend Certificate</h3>
+            <img src="./assets/frontend.png" alt="Frontend Certificate">
+        </div>
+
+        <div class="certificate-card">
+            <h3>Frontend Internship Certificate</h3>
+            <img src="./assets/internship.png" alt="Frontend Certificate">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>📧 Email: visitkhaja@gmail.com</p>
+        <p>🔗 LinkedIn: https://www.linkedin.com/in/haja-mueenudeen-996b36248/</p>
+        <p>📱 Phone: +91 9876543210</p>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href"))
+                    .scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        // Particles.js
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00dbde" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.8 },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 120,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "out_mode": "bounce"
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 0.7 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+
+</html>
